@@ -4,12 +4,15 @@ import { Window } from "./components/Window";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { ProjectsContent } from "./components/Projects"
+import { Player } from "./components/Player";
+
+import poohImg from "./img/pooh.png";
 
 const ICONS = [
-  { id: "about", label: "About Me", img: "src/img/pooh.png", defaultPos: { top: 40, right: 40 } },
-  { id: "projects", label: "Projects", img: "src/img/pooh.png", defaultPos: { top: 20, left: 400 } },
-  { id: "experience", label: "Experience", img: "src/img/pooh.png", defaultPos: { top: 80, right: 80 } },
-  { id: "contact", label: "Contact", img: "src/img/pooh.png", defaultPos: { top: 140, right: 120 } },
+  { id: "about", label: "About Me", img: poohImg, defaultPos: { top: 40, right: 40 } },
+  { id: "projects", label: "Projects", img: poohImg, defaultPos: { top: 20, left: 400 } },
+  { id: "experience", label: "Experience", img: poohImg, defaultPos: { top: 80, right: 80 } },
+  { id: "contact", label: "Contact", img: poohImg, defaultPos: { top: 140, right: 120 } },
 ];
 
 function App() {
@@ -24,6 +27,7 @@ function App() {
   return (
     <div className="app-shell">
       <Header />
+      <Player />
 
       <div className="desktop">
         {/* Desktop icons */}
